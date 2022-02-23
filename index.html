@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animaciones número primitiva</title>
+    <link rel="stylesheet" href="Estilos-Animaciones.css">
     <script>
         function sorteo() {
             const num = [];
@@ -29,25 +30,32 @@
         });
 
     </script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+        </style>
 </head>
 
 <body>
-    <header></header>
+    <header class="headerFlex">
+        <h1>PRIMITIVA</h1>
+      </header>
     <main>
         <div class="nums">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>C</div>
+            <div id="grid-item" class="animacion1">1</div>
+            <div id="grid-item" class="animacion2">2</div>
+            <div id="grid-item" class="animacion3">3</div>
+            <div id="grid-item" class="animacion4">4</div>
+            <div id="grid-item" class="animacion5">5</div>
+            <div id="grid-item" class="animacion6">6</div>
+            <div id="grid-item" class="animacion7">C</div>
         </div>
         <div>
-            <div id="fecha">Fecha del sorteo: </div>
+            <div id="fecha" >Fecha del sorteo: </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy; Eusebio Coca Lorenzo </p> 
+    </footer>
 </body>
 
 </html>

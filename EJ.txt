@@ -1,4 +1,4 @@
 
--Poner footer y header y animar el contenido
+-Poner footer (con el simbolo del copyright) y header y animar el contenido
 -Cambiar estilos en Portrait
 -Importar fuente

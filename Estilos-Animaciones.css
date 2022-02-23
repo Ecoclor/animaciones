@@ -1,0 +1,165 @@
+
+.headerFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgreen;
+    flex-direction:column;
+    color: orange;
+    margin-bottom: 5vh;
+    border:  3px solid orange ;
+    font-size: larger;
+  }
+
+body{
+    background-color: beige;
+    font-family: 'Festive', cursive;
+}
+
+
+footer{
+    border:  3px solid orange ;
+    background-color: lightgreen;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    color: orange;
+}
+
+.nums {
+    
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+  }
+  
+  #grid-item {
+ 
+    text-align: center;
+    padding: 2rem;
+    margin: 1vh;
+    font-size: 200%;
+    border:  3px solid orange ;
+    background-color: ghostwhite;
+  }
+
+
+  .animacion1:hover{
+    animation: 4s ease-in 0s infinite normal forwards running aparecer;
+  }
+  .animacion2:hover{
+    animation: 1s ease-in 0s infinite normal forwards running multicolor;
+  }
+  .animacion3:hover{
+    animation: 5s ease-in infinite alternate forwards running encoger;
+  }
+  .animacion4:hover{
+    animation: 8s infinite normal forwards running girar;
+  }
+  .animacion5:hover{
+    animation: 4s infinite normal forwards running saltos;
+  }
+  .animacion6:hover{
+    animation: 4s ease-in infinite normal forwards running rotar;
+  }
+  .animacion7:hover{
+    animation: 4s ease-in 0s infinite normal forwards running aparece;
+  }
+  .animacion8:hover{
+    animation: 4s ease-in 0s infinite normal forwards running aparece;
+  }
+
+  @keyframes multicolor {
+    0% {
+      color: aliceblue;
+      size: 50vh;
+      background-color: #001F3F;
+    }
+    30% {
+        size: 100vh;
+        background-color: #de36ff;
+      }
+      50% {
+        color: brown;
+        size: 100vh;
+        background-color: #b4f5a4;
+      }
+      70% {
+        size: 100vh;
+        background-color: #4e4e25;
+      }
+    100% {
+      color: darkorchid;
+      size: 100vh;
+      background-color: #FF4136;
+    }
+  }
+
+@keyframes aparecer {
+
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes encoger {
+    from {
+      color: darkseagreen;
+      background-color: firebrick;
+      width: 50vw;
+    }
+    to {
+      color: firebrick;
+      background-color: darkseagreen;
+      width: 20vw;
+    }
+  }
+
+  @keyframes girar {
+    from {
+        font-size: 1rem;
+        height: 8vh;
+        transform: rotate(360deg);
+    }
+    to {
+        font-size: 10rem;
+        height: 25vh;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes saltos {
+    0% {
+        border:  2px solid orange ;
+        transform: translate(0vh,1vh);
+    }
+    50% {
+        color: red;
+        border:  6px solid red ;
+        transform: translate(0vh, -1vh);
+    }
+    100% {
+        border:  2px solid orange ;
+        transform: translate(0vh,1vh);
+    }
+}
+
+@keyframes rotar {
+    0% {
+        border:  2px solid orange ;
+        transform: rotateX(0deg);
+    }
+    50% {
+        color: red;
+        border:  6px solid red ;
+        transform: rotateX(180deg);
+    }
+    100% {
+        border:  2px solid orange ;
+        transform: rotateX(0deg);
+    }
+}
