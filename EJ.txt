@@ -1,0 +1,4 @@
+
+-Poner footer y header y animar el contenido
+-Cambiar estilos en Portrait
+-Importar fuente
